@@ -30,6 +30,14 @@ descriptions and trailers, and launch each game in the right emulator.
 Controls: arrows or the left stick to move, **A** to choose, **B** to go back, **Start** for the
 menu, **X** for details, **Y** for a random game. Hold **A** to choose how to play this time.
 
+## Playing straight from the server
+
+Pick **Play over the network** to stream a game from the RomM server instead of downloading it
+first: only the parts the emulator reads come down. It needs WinFsp (free) once: open
+**Settings > Playing > Streaming through RomM**, press **Install WinFsp** (Windows asks for
+permission), then **Download rclone** and **Test streaming**. Nothing else to set up: it uses the
+same RomM address and sign-in.
+
 ## Updates
 
 WheatlyCube checks this page for new versions and offers them in **Settings > System**.
