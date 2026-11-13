@@ -28,7 +28,7 @@ descriptions and trailers, and launch each game in the right emulator.
    emulator, WheatlyCube offers to install it from the emulator's official site.
 
 Controls: arrows or the left stick to move, **A** to choose, **B** to go back, **Start** for the
-menu, **X** for details, **Y** for a random game. Hold **A** to choose how to play this time.
+menu, **X** for details, **Y** for a random game. Hold **A** for launch options (choose how to play this time).
 
 ## Playing straight from the server
 
