@@ -1,7 +1,7 @@
 # WheatlyCube
 
-A controller-friendly game library for Windows that plays your games from a
-[RomM](https://github.com/rommapp/romm) server: browse your consoles, see box art,
+A controller-friendly game library for Windows, Linux / Steam Deck and Android that plays your
+games from a [RomM](https://github.com/rommapp/romm) server: browse your consoles, see box art,
 descriptions and trailers, and launch each game in the right emulator.
 
 **This repository holds downloads only.** Get the latest version from
@@ -9,10 +9,28 @@ descriptions and trailers, and launch each game in the right emulator.
 
 ## Install
 
+**Windows**
+
 1. Download `WheatlyCube-<version>-setup.exe` from the [latest release](../../releases/latest).
 2. Run it. Windows may say **"Windows protected your PC"** because the installer isn't
    code-signed yet: click **More info**, then **Run anyway**.
 3. Pick the theme and sound packs you want (all of them is fine), and finish.
+
+**Steam Deck and other Linux PCs**
+
+1. In Desktop Mode, download `WheatlyCube-<version>-x86_64.AppImage` into `~/Applications`.
+2. Make it executable (right-click > Properties > Permissions > **Is executable**) and run it
+   once to sign in to RomM.
+3. Steam > Games > **Add a Non-Steam Game**, pick the AppImage, and add `--fullscreen` to its
+   Launch Options. Play it from Game Mode like any game.
+
+**Android (phones, tablets, the AYN Thor)**
+
+1. Download `WheatlyCube-<version>-android-arm64.apk` on the device and open it. Allow your
+   browser or file manager to install apps when Android asks.
+2. After signing in, open **Settings > Playing > Emulator setup**: it installs the emulators from
+   your RomM server (when they are kept there), copies the BIOS files and lists the one-time
+   steps inside each emulator.
 
 ## First start
 
@@ -33,14 +51,17 @@ menu, **X** for details, **Y** for a random game. Hold **A** for launch options 
 ## Playing straight from the server
 
 Pick **Play over the network** to stream a game from the RomM server instead of downloading it
-first: only the parts the emulator reads come down. It needs WinFsp (free) once: open
+first: only the parts the emulator reads come down. On Android it needs no setup. On Linux,
+open **Settings > Playing > Streaming through RomM** and press **Download rclone**, then
+**Test streaming**. On Windows it needs WinFsp (free) once: open
 **Settings > Playing > Streaming through RomM**, press **Install WinFsp** (Windows asks for
 permission), then **Download rclone** and **Test streaming**. Nothing else to set up: it uses the
 same RomM address and sign-in.
 
 ## Updates
 
-WheatlyCube checks this page for new versions and offers them in **Settings > System**.
+WheatlyCube checks this page for new versions and offers them in **Settings > System** (Windows)
+and updates the AppImage by itself (Linux). On Android, install the new APK over the old one.
 
 New games and new art on the RomM server show up by themselves: WheatlyCube checks RomM when it
 starts and every 15 minutes. To check straight away, use **Settings > Library > Update library**.
